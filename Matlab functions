@@ -1,0 +1,30 @@
+% a=[4 2 -7 5];
+% b=[1,-1,2 8];
+% c=a+b
+% d=a-b
+% e=5*a
+
+a=[2,-1,3];
+b=[3,1,-4];
+c=dot(a,b)
+d=norm(a)
+e=norm(b)
+alpha=acos(c/(d*e))/pi*180
+alpha=rad2deg(acos(c/(d*e)))
+
+% points -> vectors
+A=[4 -1 2]
+B=[5 2 -3]
+C=[-3 1 4]
+% side vectors
+a=B-A
+b=C-A
+% cross product
+cross(a,b)
+%area of the parallelogram
+norm(cross(a,b))
+% area of the triangle
+norm(cross(a,b))/2
+
+
+
